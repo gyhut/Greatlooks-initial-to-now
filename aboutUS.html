@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <title>Great-Looks</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="http://maps.googleapis.com/maps/api/js"> </script>
+    <script>
+        var Mycenter=new google.maps.LatLng(37.387663,-121.930140);
+        function initialize()
+        {
+            var mapProp = {
+                center:Mycenter,zoom:10,mapTypeControl:true,
+                mapTypeControlOptions: {
+                    style:google.maps.MapTypeControlStyle.DROPDOWN_MENU
+                }, mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            var marker=new google.maps.Marker({
+                position:Mycenter,
+                animation:google.maps.Animation.BOUNCE
+            });
+            marker.setMap(map);
+            var infowindow = new google.maps.InfoWindow({
+                content:"<b>Here i am!</b>"
+            });
+
+            infowindow.open(map,marker);
+
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+</head>
+<body id="home-page">
+<div class="navigation">
+    <header>
+        <img src="images/greatlookslogo%20(2).png" alt="GreatlooksLogo" />
+        <nav>
+
+            <a href="Home.html">Fusion</a>
+            <a href="Nature.html">Nature</a>
+            <a href="Celebrity.html">Celebrity</a>
+            <a href="Portfolio.html">Protfolio</a>
+            <a href="aboutUS.html" >About Us</a>
+        </nav>
+
+
+    </header>
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+<div id="googleMap" >
+
+
+</div>
+
+
+<footer>
+
+    <div style="float: left;">
+        &copy;<i>Great-Looks Photo art</i>
+    </div>
+</footer>
+<!--<script>-->
+    <!--if(navigator.geolocation){-->
+<!--//        alert("Succes")-->
+        <!--navigator.geolocation.getCurrentPosition(success,failure);-->
+        <!--}-->
+    <!--else{alert("not supoorted")-->
+    <!--}-->
+    <!--function success(position)-->
+    <!--{-->
+       <!--//console.log(position);-->
+        <!--var lan=position.coords.longitude;-->
+        <!--var lat=position.coords.latitude;-->
+        <!--var Mycenter=new google.maps.LatLng(37.2788359,-121.96011430000001);-->
+        <!--mapOptions={zoom:10,center:Mycenter,mapTypeId:google.maps.MapTypeId.ROADMAP};-->
+        <!--var map= new google.maps.Map(document.getElementById("googleMap "),mapOptions);-->
+    <!--}-->
+    <!--function failure(position)-->
+    <!--{-->
+        <!--alert(failure);-->
+    <!--}-->
+
+<!--</script>-->
+</body>
+</html>

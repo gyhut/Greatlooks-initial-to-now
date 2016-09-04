@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="style.css" />
+    <script src="jquery-1.12.0.min.js">
+        </script>
+    <script src="jquery.cycle2.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $(".image").click(function(e)
+            {
+
+                e.preventDefault();
+                imagepath= $(this).attr("href");
+               $(".content-img").attr("src",imagepath);
+
+            })
+        });
+    </script>
+    <meta charset="utf-8"  >
+    <title>Great-Looks</title>
+
+
+   </head>
+<body id="home-page">
+
+
+    <div class="navigation">
+        <header>
+            <img src="images/greatlookslogo%20(2).png" alt="GreatlooksLogo" />
+            <nav>
+
+                <a href="Home.html">Fusion</a>
+                <a href="Nature.html">Nature</a>
+                <a href="Celebrity.html">Celebrity</a>
+                <a href="Portfolio.html">Protfolio</a>
+                <a href="aboutUS.html" >About Us</a>
+            </nav>
+
+
+        </header>
+    </div>
+
+    <div class="content">
+        <div class="img-content">
+
+            <div id="gallery" style="width:800px;height:500px;" class="cycle-slideshow " >
+
+                <div class="cycle-overlay" ></div>
+                <div class="cycle-prev">
+
+                </div>
+                <div class="cycle-next">
+
+                </div>
+
+                 <img src="images/Preethi.jpg" alt="image" style="width:800px;height: 500px; border-radius: 10px;"  class="content-img "  data-cycle-title="<i>Be passionate </i>" data-cycle-desc="Fashion" />
+                 <img  src="images/colors.jpg " alt="image" style="width:800px;height: 500px; border-radius: 10px;" class="content-img"  data-cycle-title="<i>Add some colors</i>" data-cycle-desc="Fashion" />
+                <img src="images/nybuilding.jpg" alt="image" style="width:800px;height: 500px; border-radius: 10px;" class="content-img"  data-cycle-title="<i>Human mind creativity</i> " data-cycle-desc="Fashion" />
+                <img src="images/ny.jpg" alt="image"  style="width:800px;height: 500px; border-radius: 10px;" class="content-img"  data-cycle-title=" <i>Fast Riding </i>" data-cycle-desc="Fashion" />
+
+
+            </div>
+
+
+            <div class="HImages" style="width:800px; height:330px ;margin-top: 20px;">
+                  <!--<a href="images/mainlogo.jpg" width="100" height="100" > <img class="ahover" src="images/mainlogo.jpg" style="width:100px ; height:100px"/></a>-->
+
+                    <a class="Himage"  href="images/colors.jpg"  > <img class="ahover" src="images/colors.jpg"  style="width:110px ; height:110px"/></a>
+
+                    <a class="Himage"  href="images/Preethi.jpg"  > <img class="ahover" src="images/Preethi.jpg"  style="width:110px ; height:110px"/></a>
+
+                    <a class="Himage" href="images/image1.jpg"  ><img class="ahover" src="images/image1.jpg"  style="width:110px ; height:110px"/></a>
+
+                    <a class="Himage" href="images/sun.jpg"  ><img class="ahover" src="images/sun.jpg"  style="width:110px ; height:110px"/></a>
+                    <a class="Himage" href="images/ny.jpg"  ><img class="ahover" src="images/ny.jpg"  style="width:110px ; height:110px"/></a>
+                     <a class="Himage" href="images/nybuilding.jpg"  ><img class="ahover" src="images/nybuilding.jpg"  style="width:110px ; height:110px"/></a>
+                <a class="Himage"  href="images/sun.jpg" ><img class="ahover" src="images/sun.jpg"  style="width:110px ; height:110px"/></a>
+
+
+             </div>
+
+
+           <!--<a
+            target="_blank" href="Prety.jpg">-->
+                    <!--<img src="images/Preethi.jpg" alt="Image Missing" width="600" height="400"  />-->
+                    <!--<img src="images/colors.jpg" alt="Image Missing" width="600" height="400"  />-->
+                    <!--<img src="images/image1.jpg" alt="Image Missing" width="600" height="400"  />-->
+                <!--</a>-->
+            <!--<script >-->
+                <!--images=["images/Preethi.jpg","images/colors.jpg","images/image1.jpg"];-->
+                <!--rand=Math.floor(Math.random()*images.length);-->
+                <!--document.write("<img id='img' src="+images[rand]+"  width='800' height='500'  />");-->
+            <!--</script>-->
+
+
+        </div>
+
+    </div>
+
+
+
+<!--<script >-->
+    <!--images=["images/Preethi.jpg","images/colors.jpg","images/image1.jpg"];-->
+    <!--rand=Math.floor(Math.random()*images.length);-->
+    <!--document.write("<img id='img' src="+images[rand]+"  width='600' height='400'  />");-->
+<!--</script>-->
+<footer>
+    <p>&copy;<i><b>Great-Looks Photo art</b></i></p>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,294 @@
+*{
+    margin:0;
+    padding:0;
+}
+#main{
+    width:1200px;
+    background: whitesmoke;
+}
+.main-para p{
+    width:800px;
+    border: 2px solid #9E9E9E;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+#gallery{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-logo ul li{
+
+    display: inline;
+}
+
+.main-logo img{
+    width:500px;
+    height:230px;
+    margin:0 50px 5px 400px;
+    float: left;
+}
+#googleMap{
+    width:500px;
+    height:300px;
+    border-radius: 5px;
+    border:3px solid darkslategrey;
+    float: right;
+    margin-top:200px;
+
+}
+#p-main{
+    width: 1000px;
+    height:90px;
+   color: teal;
+    font-family: Arial;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin:10px 100px 5px 150px;
+    font-size: 35px;
+
+}
+#home-page{
+    width:100%;
+    height:100%;
+    background:white;
+
+
+}
+#wrapper{
+    width: 100%;
+    height:800px;
+    background: #F5F6FB;
+    /*margin:0 auto;*/
+}
+
+
+.image-nav{
+    width:100px;
+    float:right;
+    margin-left:80px;
+    margin-top:120px;
+}
+
+.image-nav  a{
+    width:100px;
+    height:40px;
+    text-decoration: none;
+    padding:5px;
+}
+.navigation{
+    width :100%;
+    height:80px;
+    text-align: center;
+    position: static;
+}
+header {
+    width: 100%;
+    height:80px;
+    position: fixed;
+    background-color: whitesmoke;
+    opacity: 0.90;
+    z-index: 999;
+}
+
+header nav {
+    width: 800px;
+    height:40px;
+    text-align: center;
+    display: inline-block;
+    margin-top:28px;
+}
+
+header nav a{
+    text-align: center;
+    text-decoration:none;
+    font-style: italic;
+    font-size: 1.3em;
+    color:black;
+    font-weight: bold;
+    padding: 0 20px;
+}
+header img{
+    float: left;
+    width: 200px;
+    height:80px;
+    margin-left:40px;
+}
+
+
+.logOn-Home{
+    width: auto ;
+    background-color:#eaeff2;
+}
+
+.content{
+    width:100%;
+    height:800px;
+    background: white;
+}
+
+.img-content{
+    margin:0 50px 5px 300px;
+    float: left;
+
+}
+/*.ahover:hover{*/
+    /*border: 2px solid #9E9E9E;*/
+    /*border-radius: 5px;*/
+    /*padding: 0;*/
+
+/*}*/
+.cycle-overlay {
+    font-family: tahoma;
+    position: absolute;
+    bottom: 0;
+    width: 770px;
+    z-index: 500;
+    background: black;
+    color: white;
+    padding: 15px;
+    opacity: 0.5;
+
+
+}
+
+#C-image{
+    width:800px;
+    height:500px;
+
+    /*margin:80px 300px 0 300px;*/
+}
+.cycle-prev{
+    width:50px;
+    height:400px;
+    left: 0;
+    background: url(images/left.png) 50% 50% no-repeat;
+
+}
+.cycle-next{
+    width:50px;
+    height:400px;
+    right: 0;
+    background: url(images/right.png) 50% 50% no-repeat;
+}
+.cycle-prev,.cycle-next{
+    position: absolute;
+    top: 0;
+    width: 30%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    z-index: 800;
+    height: 100%;
+    cursor: pointer;
+    float:right;
+}
+.cycle-prev:hover, .cycle-next:hover {
+    opacity: .9;
+    filter: alpha(opacity=90)
+}
+footer{
+    float: left;
+    position: fixed;
+    bottom:0;
+}
+.cycle-overlay{
+    text-align:right;
+
+}
+
+.about-US{
+    width:500px;
+    height:900px;
+    background-color: aqua;
+    float:left;
+margin-left:30px;
+}
+.PFcontent{
+    width:100%;
+    height:100%;
+    background-color: burlywood;
+}
+.PFcontent1{
+    width:330px;
+    height:100%;
+    float:left;
+    margin-left: 120px;
+}
+.PFcontent2{
+    width:360px;
+    height:100%;
+
+   margin-left:10px;
+    float: left;
+    }
+
+.PFcontent3{
+    width:360px;
+    height:100%;
+    background-color: yellow;
+    margin-left:840px;
+
+}
+.PFimage4{
+    width:360px;
+    height:400px;
+    background-size:360px 400px ;
+    margin-top:9px;
+    opacity:1.0;
+}
+.PFimage5{
+    width:330px;
+    height:400px;
+    background-size:330px 400px ;
+    margin-top:15px;
+    opacity:1.0;
+
+}
+.PFimage6{
+
+    width:360px;
+    height:200px;
+    background-size:360px 200px ;
+    margin-top:25px;
+    opacity:1.0;
+}
+.PFimage7{
+
+    width:360px;
+    height:300px;
+    background-size:360px 300px ;
+    margin-top:25px;
+    opacity:1.0;
+}
+.PFtransbox {
+    width: 360px;
+    height: 40px;
+    background-color: black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+
+
+}
+.PFp{
+    text-align: center ;
+    color: white;
+    letter-spacing: 2px;
+    font-size:20px;
+
+}
+.PFimage4,.PFimage5,.PFimage7,.PFimage6,.PFimage1,.PFimage2,.PFimage3{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.HImages>.Himage{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+/*div.polaroid {*/
+    /*width: 250px;*/
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    /*text-align: center;*/
+/*}*/
